@@ -1,6 +1,9 @@
 # R3F Character Controls
 A robust boilerplate for initiating character movement and controls in a Three.js setting, leveraging the power of React-Three-Fiber and React-Three-Cannon.
 
+## Live demo
+[Live preview](https://r3f-character-controls.vercel.app/) of the features, powered by [Vercel](https://vercel.com/)
+
 ## Features:
 - Character Movement: Smooth character movement with acceleration and deceleration for a more realistic experience.
 - Camera Control: Dynamic camera positioning that follows the character, ensuring a seamless navigation experience.
