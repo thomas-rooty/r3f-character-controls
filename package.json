@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@dimforge/rapier3d": "^0.11.2",
+    "@react-three/cannon": "^6.6.0",
     "@react-three/drei": "^9.83.9",
     "@react-three/fiber": "^8.14.1",
     "@types/node": "20.6.0",
