@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# R3F Character Controls
+A robust boilerplate for initiating character movement and controls in a Three.js setting, leveraging the power of React-Three-Fiber and React-Three-Cannon.
 
-## Getting Started
+## Features:
+- Character Movement: Smooth character movement with acceleration and deceleration for a more realistic experience.
+- Camera Control: Dynamic camera positioning that follows the character, ensuring a seamless navigation experience.
+- Collision Detection: Utilizes Three.js raycasting for detecting objects in front of the character and setting interactive objects.
+- Physics Integration: Built-in physics using React-Three-Cannon for realistic object dynamics.
 
-First, run the development server:
+## Setup:
+### Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/thomas-rooty/r3f-character-controls.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Navigate to the project directory and install the dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd r3f-character-controls
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Run the development server:
 
-## Learn More
+```bash
+Copy code
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+Now, you should be able to see the boilerplate in action on your local server!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization:
+- Character Attributes: Adjust the character's attributes such as speed, mass, and geometry within the Character component.
+- Camera Positioning: Modify the camera's distance and angle with respect to the character by tweaking the distance variable.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributions:
+Contributions, issues, and feature requests are welcome! Feel free to check issues page
