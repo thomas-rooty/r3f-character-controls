@@ -20,13 +20,13 @@ const Character = (props: SphereProps) => {
   const [ref, api] = useSphere<any>(() => ({
     mass: 1,
     type: 'Dynamic',
-    position: [0, 10, 0],
+    position: [0, 3, 0],
     ...props,
   }))
 
   // Movement system
   const setPosition = createCharacterSlice((state) => state.setPosition)
-  const { forward, backward, left, right, jump } = useControls()
+  const { forward, backward, left, right } = useControls()
   const velocity = useRef<any>([0, 0, 0])
   useEffect(() => api.velocity.subscribe((v) => (velocity.current = v)), [api.velocity])
   useEffect(
@@ -67,9 +67,6 @@ const Character = (props: SphereProps) => {
 
     // Use the smoothed velocity for the character's movement
     api.velocity.set(currentVelocity.x, currentVelocity.y, currentVelocity.z)
-
-    if (jump && Math.abs(velocity.current[1].toFixed(3)) < 0.001)
-      api.velocity.set(velocity.current[0], 10, velocity.current[2])
 
     // Adjust camera position to follow character
     camera.position.set(charPosition.current[0] + 2, charPosition.current[1] + 8.5, charPosition.current[2] + 7)

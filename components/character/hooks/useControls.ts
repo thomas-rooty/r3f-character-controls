@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 export const useControls = () => {
-  const keys = { KeyW: 'forward', KeyS: 'backward', KeyA: 'left', KeyD: 'right', Space: 'jump', KeyE: 'interact' }
+  const keys = { KeyW: 'forward', KeyS: 'backward', KeyA: 'left', KeyD: 'right', KeyE: 'interact' }
   const buttons = { 0: 'leftClick', 2: 'rightClick' }
   const moveFieldByKey = (key: string | number) => keys[key as keyof typeof keys]
   const moveFieldByButton = (button: number) => buttons[button as keyof typeof buttons]
@@ -11,7 +11,6 @@ export const useControls = () => {
     backward: false,
     left: false,
     right: false,
-    jump: false,
     interact: false,
     leftClick: false,
     rightClick: false,
