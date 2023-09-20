@@ -18,8 +18,8 @@ export default function Home() {
               color={'cyan'}
               rotation={[Math.PI / -2, 0, 0]}
               position={[0, 0, 0]}
-              args={[25, 25, 0.1]}
-              scale={[25, 25]}
+              args={[10, 10, 0.1]}
+              scale={[10, 10]}
             />
             <Character />
           </Debug>
